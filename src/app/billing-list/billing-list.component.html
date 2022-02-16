@@ -10,11 +10,11 @@
     <table class="table table-hover table-dark">
         <thead class="bg-danger text-white text-upparcase">
             <tr>
-                <th> Order-Id</th>
-                <th> Bill-Id </th>
-                <th> Item Name </th>
-                <th> Price</th>
-                <th> Created Date</th>
+                <th>Order-Id</th>
+                <th>Customer-Id </th>
+                <th>Item Name </th>
+                <th>Price</th>
+                <th>Created Date</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
@@ -26,7 +26,7 @@
                 <td> {{ bill.customerId }} </td>
                 <td> {{ bill.name}} </td>
                 <td> ₹{{ bill.price}} </td>
-                <td> ₹{{ bill.createdDate}} </td>
+                <td> {{ bill.createdDate}} </td>
                 <td>
 
                     <button (click)="updateBill(bill.id)" class="btn-hover color-9"> <i class="fa fa-edit"></i></button>
