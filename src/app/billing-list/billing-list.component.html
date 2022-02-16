@@ -14,16 +14,19 @@
                 <th> Bill-Id </th>
                 <th> Item Name </th>
                 <th> Price</th>
+                <th> Created Date</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let bill of bills">
+
                 <td> {{ bill.id }} </td>
-                <td> {{ bill.billId }} </td>
+                <td> {{ bill.customerId }} </td>
                 <td> {{ bill.name}} </td>
                 <td> ₹{{ bill.price}} </td>
+                <td> ₹{{ bill.createdDate}} </td>
                 <td>
 
                     <button (click)="updateBill(bill.id)" class="btn-hover color-9"> <i class="fa fa-edit"></i></button>

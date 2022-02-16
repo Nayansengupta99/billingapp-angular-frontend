@@ -3,9 +3,10 @@ export class Billing {
     
     
     id: number;
-    billId:number;
+    customerId:number;
     price:BigInteger;
     name:String;
+    createdDate:String;
 
     // constructor(id:number,billId:number,price:number,name:string){
     //     this.id=id;

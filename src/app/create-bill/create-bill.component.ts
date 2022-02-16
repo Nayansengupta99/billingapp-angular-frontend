@@ -24,7 +24,7 @@ export class CreateBillComponent implements OnInit {
   }
 
   saveBill() {
-    this.bill.billId = 6
+    this.bill.customerId = 6
 
     this.billingService.createBill(this.bill).subscribe(data => {
       console.log(data);
